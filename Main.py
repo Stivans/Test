@@ -8,3 +8,4 @@ print(data.keys())
 a = (data.get('Valute'))
 b = (a.get('AUD'))
 print(b.get('Name'), b.get('Value'))
+123
