@@ -3,5 +3,9 @@ import json
 
 url = 'https://www.cbr-xml-daily.ru/daily_json.js'
 response = requests.get(url)
-data=json.loads(response.text)
-print(data)
+data = json.loads(response.text)
+print(data.keys())
+a = (data.get('Valute'))
+b = (a.get('AUD'))
+print(b.get('Name'), b.get('Value'))
+
